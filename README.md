@@ -4,13 +4,18 @@
 Experiência que permita o usuário escolher entre rodar uma aplicação de realidade aumentada ou uma aplicação de realidade virtual (tour 360). <br>
 Rspondenda as seguintes questões: <br><br>
 
-- **O que foi desenvolvido?** <br>
+## **1. O que foi desenvolvido?** <br>
 
 **Entrega Tour 360:** <br>
 
 Foi criada uma aplicação que permite ao usuário ter uma experiência de Realidade Virtual (VR), representada por um tour 360 interativo, com o ambiente do refeitório do Inteli e também o ambiente da lanchonete. No código fornecido, o foco está na implementação da parte de VR, utilizando A-Frame, um framework baseado em HTML para construção de experiências de realidade virtual na web. <br>
 
-- **Como foi implementada a experiência de realidade aumentada?** <br>
+**Entrega AR (Imagem):** <br>
+
+
+**Entrega AR (Vídeo _Som):** <br>
+
+## **2. Como foi implementada a experiência de realidade aumentada?** <br>
 Embora a experiência de AR ainda não esteja diretamente implementada no código, o projeto pode ser estendido para incluir AR utilizando tecnologias como o AR.js, que é compatível com A-Frame. O AR pode ser integrado adicionando marcadores como QR Codes/códigos de barra ou reconhecimento de imagens para interagir com objetos no mundo real. A ideia seria permitir ao usuário, ao abrir a aplicação, escolher AR e visualizar modelos 3D interagindo com seu ambiente físico, como por exemplo um ambiente de cozinha, utilizando um dispositivo móvel.
 
 **Entrega AR (Imagem):** <br>
@@ -18,7 +23,7 @@ Embora a experiência de AR ainda não esteja diretamente implementada no códig
 
 **Entrega AR (Vídeo _Som):** <br>
 
-- **Como foi implementada a experiência de realidade virtual?**
+## **3. Como foi implementada a experiência de realidade virtual?**
   
 A experiência de VR foi implementada através de:
   - A-Frame para criar um tour 360 interativo.
