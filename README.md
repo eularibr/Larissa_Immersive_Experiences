@@ -11,6 +11,7 @@ Foi criada uma aplicação que permite ao usuário ter uma experiência de Reali
 Embora a experiência de AR ainda não esteja diretamente implementada no código, o projeto pode ser estendido para incluir AR utilizando tecnologias como o AR.js, que é compatível com A-Frame. O AR pode ser integrado adicionando marcadores como QR Codes/códigos de barra ou reconhecimento de imagens para interagir com objetos no mundo real. A ideia seria permitir ao usuário, ao abrir a aplicação, escolher AR e visualizar modelos 3D interagindo com seu ambiente físico, como por exemplo um ambiente de cozinha, utilizando um dispositivo móvel.
 
 - **Como foi implementada a experiência de realidade virtual?**
+  
 A experiência de VR foi implementada através de:
   - A-Frame para criar um tour 360 interativo.
   - Câmera do celular e o aplicativo *360 Photo Cam*, com a fucnionalidade de tirar fotos no modo 360º para permitir interação do usuário com elementos virtuais, possibilitando rotacionar a imagem observando todo o ambiente e com a possibilidade de andar com (a,w,s,d) e também dar zoom.
