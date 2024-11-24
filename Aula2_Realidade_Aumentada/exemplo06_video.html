@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro AR</title>
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>
+    <script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
+    <style>
+        /* Estilo para o botão de voltar */
+        #back-button {
+            position: fixed; /* Fixa o botão na tela */
+            top: 10px; /* Margem superior */
+            left: 10px; /* Margem esquerda */
+            padding: 10px 20px; /* Espaçamento interno */
+            background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+            color: #007BFF; /* Cor do texto */
+            border: none; /* Remove bordas */
+            border-radius: 5px; /* Arredonda os cantos */
+            font-size: 1.2rem; /* Tamanho do texto */
+            z-index: 9999; /* Garante que o botão fique sobre os outros elementos */
+            cursor: pointer; /* Mostra o ponteiro ao passar sobre o botão */
+        }
+
+        #back-button:hover {
+            background-color: rgba(255, 255, 255, 1); /* Fundo mais opaco no hover */
+        }
+    </style>
+</head>
+<body style="margin:0px; overflow: hidden;">
+    <a-scene vr-mode-ui="enabled: false" arjs="debugUIEnabled:false">
+        <a-assets>
+            <audio id="som" preload="auto" src="./assets/musica01.mp3"></audio>
+            <video id="kuka" src="./assets/robos.mp4" autoplay loop></video>
+            <img id="sete" src="./assets/025.png" />
+        </a-assets>
+
+        <a-marker preset="hiro" controlador>
+            <a-video width="1" height="1" rotation="-90 0 0" position="0 0 0" src="#kuka"></a-video>
+        </a-marker>
+
+        <a-entity camera=""></a-entity>
+    </a-scene>
+
+    <!-- Botão de voltar -->
+    <button id="back-button" onclick="window.location.href='tela_inicial.html';">Voltar</button>
+
+    <script>
+        // Componente controlador para vídeo e áudio
+        AFRAME.registerComponent('controlador', {
+            init: function () {
+                this.toggle = false;
+                this.vid = document.querySelector("#kuka");
+                this.audio = document.querySelector("#som");
+
+                // Pausar áudio e vídeo inicialmente
+                this.vid.pause();
+                this.audio.pause();
+            },
+            tick: function () {
+                if (this.el.object3D.visible === true) {
+                    if (!this.toggle) {
+                        this.toggle = true;
+                        this.vid.play();
+                        this.audio.play();
+                    }
+                } else {
+                    if (this.toggle) {
+                        this.toggle = false;
+                        this.vid.pause();
+                        this.audio.pause();
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
