@@ -166,6 +166,8 @@ A experiência de AR foi implementada usando o A-Frame e o AR.js. Um marcador hi
 <br><br>
 
 ## **3. Como foi implementada a experiência de realidade virtual?**
+
+### Entrega Tour 360: <br>
   
 A experiência de VR foi implementada através de:
   - A-Frame para criar um tour 360 interativo.
