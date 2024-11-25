@@ -9,14 +9,37 @@ Experiência que permita o usuário escolher entre rodar uma aplicação de real
 
 Foi criada uma aplicação que permite ao usuário ter uma experiência de Realidade Virtual (VR), representada por um tour 360 interativo, com o ambiente do refeitório do Inteli e também o ambiente da lanchonete. No código fornecido, o foco está na implementação da parte de VR, utilizando A-Frame, um framework baseado em HTML para construção de experiências de realidade virtual na web. <br>
 
+<div align="center">
+    <img src="https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Demonstracoes_Imagens/Demonstracao_360_Lanchonete_Modulo12.png" 
+         style="width: 70%; height: auto;"/> <br>
+</div>
+
+<div align="center">
+  <img src="https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Demonstracoes_Imagens/Demonstracao_360_Refeitorio_Modulo12.png"
+        style="width: 70%; height: auto;"/> <br>
+</div>
+
+<br><br>
+
 **Entrega AR (Imagem):** <br>
 
 Foi criada uma aplicação de Realidade Aumentada (AR) utilizando o framework A-Frame com suporte ao AR.js. O projeto demonstra um modelo 3D de um objeto (no caso, "shiba"), que aparece quando o usuário aponta a câmera de um dispositivo para um marcador AR específico, chamado de "hiro". Adicionalmente, a interface inclui um botão de retorno fixo, permitindo que o usuário volte para a tela inicial da aplicação, garantindo uma navegação fluida.
 
+<div align="center">
+  <img src="https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Demonstracoes_Imagens/Demonstracao_AR_Shiba_Modulo12.png"
+        style="width: 70%; height: auto;"/> <br>
+</div>
+
+<br><br>
 
 **Entrega AR (Vídeo _Som):** <br>
 
 Foi criada uma aplicação de Realidade Aumentada (AR) com integração de vídeos e áudio. O projeto utiliza o A-Frame e o AR.js para exibir um vídeo (#kuka) em um marcador específico (hiro), além de reproduzir um áudio associado. A funcionalidade inclui um componente chamado controlador, que pausa ou reproduz o vídeo e o áudio automaticamente com base na visibilidade do marcador "hiro". Um botão de retorno escrito "Volta" também foi adicionado para facilitar a navegação até a tela inicial da atividade.
+
+<div align="center">
+  <img src="https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Demonstracoes_Imagens/Demonstracao_AR_video_e_som_Modulo12.png"
+        style="width: 70%; height: auto;"/> <br>
+</div>
 
 ## **2. Como foi implementada a experiência de realidade aumentada?** <br>
 
