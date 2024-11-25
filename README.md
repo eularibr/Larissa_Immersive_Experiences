@@ -1,6 +1,9 @@
 # Entregas da Optativa - Experiências Imersivas
 
 ## Atividade Ponderada - Semana 1
+
+Link do site: https://eularibr.github.io/Larissa_Immersive_Experiences/
+
 Experiência que permita o usuário escolher entre rodar uma aplicação de realidade aumentada ou uma aplicação de realidade virtual (tour 360). <br>
 
 ## **1. O que foi desenvolvido?** <br>
