@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Código de Barras - Livros</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        #barcode-scanner {
+            width: 100%;
+            max-width: 640px;
+            height: auto;
+            margin: 20px auto;
+            border: 2px solid #ccc;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Leitor de Código de Barras</h1>
+    <video id="barcode-scanner"></video>
+    <div id="result">Resultado: Nenhum código detectado ainda.</div>
+
+    <script>
+        // Dicionário de códigos e livros
+        const livros = {
+            "9786588431757": "Podcast", // Código específico associado ao título do livro
+        };
+
+        // Inicia o QuaggaJS
+        Quagga.init({
+            inputStream: {
+                name: "Live",
+                type: "LiveStream",
+                target: document.querySelector('#barcode-scanner'), // Elemento de vídeo
+                constraints: {
+                    width: 640,
+                    height: 480,
+                    facingMode: "environment" // Câmera traseira
+                }
+            },
+            locator: {
+                patchSize: "medium",
+                halfSample: true
+            },
+            numOfWorkers: 4,
+            decoder: {
+                readers: ["ean_reader"] // Detecta códigos de barras EAN
+            },
+            locate: true
+        }, function(err) {
+            if (err) {
+                console.error("Erro ao iniciar o QuaggaJS:", err);
+                return;
+            }
+            console.log("QuaggaJS iniciado com sucesso");
+            Quagga.start();
+        });
+
+        // Evento chamado ao detectar um código de barras
+        Quagga.onDetected(function(data) {
+            const codigo = data.codeResult.code; // Código detectado
+            console.log("Código detectado:", codigo);
+
+            // Verifica se o código detectado está no dicionário
+            if (livros[codigo]) {
+                document.getElementById('result').innerText = `Livro Detectado: ${livros[codigo]}`;
+                Quagga.stop(); // Para o scanner após a detecção
+            } else {
+                document.getElementById('result').innerText = `Código ${codigo} não registrado.`;
+            }
+        });
+    </script>
+</body>
+</html>
