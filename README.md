@@ -225,6 +225,16 @@ A Lia atua como uma educadora virtual em realidade virtual, sendo utilizada em w
 ### Justificativa para a aparência
 A aparência da Lia foi projetada para transmitir motivação e empatia. Ela aparenta cerca de 25 anos, tem um tom de pele intermediário, traços amigáveis, e veste roupas um pouco casual/profissional como camiseta e uma calça jeans preta. Suas expressões faciais são animadas e acolhedoras, reforçando sua abordagem acessível e inclusiva. Esses elementos visuais foram escolhidos para que os jovens possam se identificar com ela, tornando a experiência mais conectada e significativa.
 
+<div align="center">
+    <img src="https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana2/Avatar_Lia.png" 
+         style="width: 70%; height: auto;"/> <br>
+</div>
+
+<div align="center">
+    <img src="https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana2/Avatar_Lia_Corpo.png" 
+         style="width: 70%; height: auto;"/> <br>
+</div>
+
 <br>
 
 ## Parte 2: Criação no MetaHuman Creator
@@ -263,6 +273,8 @@ A apresentação inicial da Lia foi elaborada como um texto motivador:
 - Ajustes finos de sincronia foram feitos para garantir naturalidade na animação.
 - O avatar animado foi exportado para uso posterior.
 
+[Watch the video](https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana2/Demonstracao_Lia_Op_Ec_Unreal_Editor.mp4)
+
 <br>
 
 ## Parte 5: Apresentação dos Resultados
@@ -272,7 +284,6 @@ A apresentação inicial da Lia foi elaborada como um texto motivador:
 2. **MetaHuman personalizado**: inclui o arquivo `.mhb` da Lia gerado no MetaHuman Creator.
 3. **Prints do resultado**: capturas de tela do avatar personalizado e animado.
 4. **Vídeo de animação com áudio integrado**: demonstração em vídeo da Lia apresentando-se.
-5. **Deploy no meta quest**: teste final do avatar em realidade virtual.
 
 <br>
 
