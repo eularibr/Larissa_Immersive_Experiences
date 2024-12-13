@@ -291,3 +291,48 @@ A apresentação inicial da Lia foi elaborada como um texto motivador:
 Este projeto foi realizado como parte de uma iniciativa educacional para explorar o uso de tecnologia e inteligência artificial em contextos de aprendizado imersivo.  
 
 Para mais informações, acesse o repositório e confira os arquivos incluídos.
+
+<br><br>
+
+# Atividade Ponderada Semana 3
+
+### Tarefa 1:
+
+- Instalação do Unity;
+
+Instalação feita com sucesso:
+
+![image.png](image.png)
+
+Na imagem acima, é possível observar que o unity já está instalado e que já possuo dois projetos criados, tanto o de grupo (remi-solutions) como o do meu projeto individual (Larissa-Projeto).
+
+### Tarefa 2:
+
+- Apresentar o que foi desenvolvido e um vídeo da navegação utilizando o VR
+
+**O que foi desenvolvido**:
+
+- Criação de um cenário no Unity;
+- Assets adicionados:
+    - Frutas;
+    - Maçã (sendo elas: inteira, na metade e 1/4);
+    - Faca.
+- Adição de som da maçã e da faca;
+- Programação em c# para criar a animação da faca, a colisão e o corte na maçã.
+
+![image.png](image%201.png)
+
+No caso da imagem acima, é possível visualizar os assets no cenário e também os scripts para a programação necessária para o corte da maçã com a faca.
+
+**Vídeo da navegação utilizando o VR:**
+
+### Tarefa 3:
+
+- Construir o Fliperama/Máquina de vídeo em conjunto
+    - desenvolver em conjunto com o restante da sala, a atividade de construir uma interação com o Fliperama Virtual. Testar a aplicação no VR.
+
+### Tarefa 4:
+
+- Adicionar uma **interação** com a sua cena criada: adicionar uma interação com a cena que você criou.
+
+**Descrição da integração:**
