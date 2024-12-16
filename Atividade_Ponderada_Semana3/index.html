@@ -14,11 +14,11 @@
         <a-assets>
             <a-asset-item id="fliperama" src="./Electronic Game.glb"></a-asset-item>
             <audio id="music1" src="./U2 - With Or Without You (Official Audio).mp3"></audio>
-            <audio id="music2" src="./"></audio>
-            <audio id="music3" src="./"></audio>
+            <audio id="music2" src="./Beautiful Day.mp3"></audio>
+            <audio id="music3" src="./U2  - Volcano.mp3"></audio>
             <img id="imagem1" src="./U2_With_Or_Without_You.png"></img>
-            <img id="" src=""></img>
-            <img id="" src=""></img>
+            <img id="imagem2" src="./beautiful_day.png"></img>
+            <img id="imagem3" src="./volcano.png"></img>
         </a-assets>
 
         <a-entity
@@ -58,23 +58,48 @@
             color="crimson">
         </a-cylinder>
 
-        <script>
-            // Adiciona evento ao botão pink
-            document.addEventListener('DOMContentLoaded', function () {
-                const pinkButton = document.querySelector('#cylinder2');
-                const audio = document.querySelector('#music1');
-
-                pinkButton.addEventListener('click', function () {
-                    if (audio.paused) {
-                        audio.play();
-                    } else {
-                        audio.pause();
-                        audio.currentTime = 0; // Reinicia o áudio
-                    }
-                });
-            });
-        </script>
-
     </a-scene>
+
+    <script>
+        // Get the elements
+        const cylinder1 = document.querySelector("#cylinder1");
+        const cylinder2 = document.querySelector("#cylinder2");
+        const cylinder3 = document.querySelector("#cylinder3");
+
+        const display = document.querySelector("#display");
+        const music1 = document.querySelector("#music1");
+        const music2 = document.querySelector("#music2");
+        const music3 = document.querySelector("#music3");
+
+        // Stop all music
+        function stopAllMusic() {
+            music1.pause();
+            music2.pause();
+            music3.pause();
+            music1.currentTime = 0;
+            music2.currentTime = 0;
+            music3.currentTime = 0;
+        }
+
+        // Event listeners for cylinders
+        cylinder1.addEventListener("click", () => {
+            stopAllMusic();
+            music1.play();
+            display.setAttribute("src", "#music1");
+        });
+
+        cylinder2.addEventListener("click", () => {
+            stopAllMusic();
+            music2.play();
+            display.setAttribute("src", "#music2");
+        });
+
+        cylinder3.addEventListener("click", () => {
+            stopAllMusic();
+            music3.play();
+            display.setAttribute("src", "#music3");
+        });
+    </script>
+
 </body>
 </html>
