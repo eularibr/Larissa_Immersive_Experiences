@@ -333,6 +333,8 @@ No caso da imagem acima, é possível visualizar os assets no cenário e também
 - Construir o Fliperama/Máquina de vídeo em conjunto
     - desenvolver em conjunto com o restante da sala, a atividade de construir uma interação com o Fliperama Virtual. Testar a aplicação no VR.
 
+![image.png](https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana3/assets/fliperama.png)
+
 ### Tarefa 4:
 
 - Adicionar uma **interação** com a sua cena criada: adicionar uma interação com a cena que você criou.
@@ -341,4 +343,18 @@ No caso da imagem acima, é possível visualizar os assets no cenário e também
 
 **Descrição da integração:**
 
-No vídeo acima, a integração foi do assets de uma faca, cortando o assets de uma maçâ que antes do corte estava inteira, e após, estava cortada na metade.
+A integração descrita no vídeo destaca um efeito visual interativo que combina dois elementos principais: o asset da faca e o asset da maçã, criando uma transição que simula um corte em tempo real. Esse tipo de interação é comum em produções multimídia, seja em animações, jogos ou comerciais.
+
+**Faca como ferramenta interativa**:
+
+A faca não apenas aparece visualmente, mas desempenha um papel ativo na transformação do estado da maçã. Ela age como um gatilho para a transição de estados.
+O movimento da faca, sua velocidade, ângulo e precisão devem ser cuidadosamente sincronizados para parecer que ela realmente está cortando o objeto.
+
+**Maçã e sua transformação**:
+
+Inicialmente, a maçã aparece inteira e intacta, representando um estado inicial estático.
+Após o contato da faca, ela muda para um estado dividido, com as duas metades separadas. Essa mudança pode ser implementada com troca de assets ou com efeitos visuais (como máscaras ou animação de fragmentação).
+
+**Efeitos visuais adicionais**:
+
+Efeitos sonoros - sons realistas, como o de uma lâmina cortando e o som do objeto (maça), reforçam a imersão.
