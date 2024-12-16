@@ -322,6 +322,8 @@ Na imagem acima, é possível observar que o unity já está instalado e que já
 
 ![image.png](https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana3/assets/image%201.png)
 
+![image.png](https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana3/assets/cenario.png)
+
 No caso da imagem acima, é possível visualizar os assets no cenário e também os scripts para a programação necessária para o corte da maçã com a faca.
 
 **Vídeo da navegação utilizando o VR:**
@@ -335,4 +337,8 @@ No caso da imagem acima, é possível visualizar os assets no cenário e também
 
 - Adicionar uma **interação** com a sua cena criada: adicionar uma interação com a cena que você criou.
 
+[Watch the video](https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana3/assets/Larissa_Projeto%20-%20SampleScene%20-%20Windows%2C%20Mac%2C%20Linux%20-%20Unity%202022.3.54f1%20_DX11_%202024-12-11%2023-01-03.mp4)
+
 **Descrição da integração:**
+
+No vídeo acima, a integração foi do assets de uma faca, cortando o assets de uma maçâ que antes do corte estava inteira, e após, estava cortada na metade.
