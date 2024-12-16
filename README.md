@@ -302,7 +302,7 @@ Para mais informações, acesse o repositório e confira os arquivos incluídos.
 
 Instalação feita com sucesso:
 
-![image.png](image.png)
+![image.png](https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana3/assets/image.png)
 
 Na imagem acima, é possível observar que o unity já está instalado e que já possuo dois projetos criados, tanto o de grupo (remi-solutions) como o do meu projeto individual (Larissa-Projeto).
 
@@ -320,7 +320,7 @@ Na imagem acima, é possível observar que o unity já está instalado e que já
 - Adição de som da maçã e da faca;
 - Programação em c# para criar a animação da faca, a colisão e o corte na maçã.
 
-![image.png](image%201.png)
+![image.png](https://github.com/eularibr/Larissa_Immersive_Experiences/blob/main/Atividade_Ponderada_Semana3/assets/image%201.png)
 
 No caso da imagem acima, é possível visualizar os assets no cenário e também os scripts para a programação necessária para o corte da maçã com a faca.
 
